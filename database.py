@@ -85,16 +85,21 @@ class Game():
 
 if __name__ == '__main__':
     print("Welcome!")
-    word = input("Word:")
-    type = input("Type:")
-    program = Main("sozluk.sql", "words" ,word, type)
-    if program.controller():
-        mean = input("Turkish:")
-        word = (word, type, mean, "0", "0", "0", "0", "0")
-        program.add(word)
-    else:
-        print("'{}' is already exist!".format(word))
-        program.update("Ask+1", "Ask", word, type)
-        pass
+    while True:
+        word = input("Word:")
+        type = input("Type:")
+        program = Main("sozluk.sql", "words" ,word, type)
+        if program.controller():
+            mean = input("Turkish:")
+            word = (word, type, mean, "0", "0", "0", "0", "0")
+            program.add(word)
+
+        elif word == "q":
+            break
+        else:
+            print("'{}' is already exist!".format(word))
+            program.update("Ask+1", "Ask", word, type)
+            pass
+
 
     
