@@ -1,3 +1,5 @@
+# This is database file for Dictionary Application
+#Every database jobs describe here. (Read, write etc. )
 import sqlite3 as sql
 
 
@@ -27,7 +29,7 @@ class Dictionary(object):
         code = """SELECT * FROM {} WHERE Word = "{}" AND Type = "{}" """.format(self.table_name, word, type)
         self.im.execute(code)
         data = self.im.fetchall()
-        print(data)
+        #print(data)
         return data
         
 
@@ -53,25 +55,10 @@ class Dictionary(object):
         self.db.commit()
 
 
-class Main(Dictionary):
-    def __init__(self, database_name, table_name,word, type, ):
-        super().__init__(database_name, table_name)
-        self.word = word
-        self.type = type
-        self.mean = None
-
-    
-    def controller(self):
-        data = self.read_sp(self.word, self.type)
-        if data == []:
-            return True
-        else:
-            return False
 
 
-class Game():
-    def __init__(self):
-        pass
+
+
 
 
 
@@ -83,23 +70,7 @@ class Game():
 
  
 
-if __name__ == '__main__':
-    print("Welcome!")
-    while True:
-        word = input("Word:")
-        type = input("Type:")
-        program = Main("sozluk.sql", "words" ,word, type)
-        if program.controller():
-            mean = input("Turkish:")
-            word = (word, type, mean, "0", "0", "0", "0", "0")
-            program.add(word)
 
-        elif word == "q":
-            break
-        else:
-            print("'{}' is already exist!".format(word))
-            program.update("Ask+1", "Ask", word, type)
-            pass
 
 
     
