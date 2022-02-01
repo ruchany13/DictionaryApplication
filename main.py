@@ -20,13 +20,13 @@ class Main(Dictionary):
 
 if __name__ == '__main__':
     print("Welcome!")
-    while True:
+    while True: 
         word = input("Word:")
         type = input("Type:")
         program = Main("sozluk.sql", "words" ,word, type)
         if program.controller():
             mean = input("Turkish:")
-            word = (word, type, mean, "0", "0", "0", "0", "0")
+            word = (word, mean, type, "0", "0", "0", "0", "0")
             program.add(word)
 
         elif word == "q":
