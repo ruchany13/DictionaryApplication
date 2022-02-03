@@ -10,6 +10,7 @@ It is a Turkish-English dictionary like a word notebooks. You can add words Engl
 - [Python](https://www.python.org/downloads/) 
 
 ## Usage
+
  Clone the project:
 
 ```
