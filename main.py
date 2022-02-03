@@ -1,5 +1,6 @@
 #The application can use with this file.
 # TODO you can use design pattern.
+# TODO embed asciinema cast in readme
 
 from database import Dictionary
 
