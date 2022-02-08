@@ -11,7 +11,7 @@ It is a Turkish-English dictionary like a word notebooks. You can add words Engl
 
 ## Usage
 
- Clone the project:
+### Git
 
 ```
  git clone https://github.com/ruchany13/DictionaryApplication
@@ -21,8 +21,16 @@ Run:
 cd DictionaryApplication
 python3 main.py
 ```
-## Docker
+### Docker
+Pull Image
+```
+docker pull rchyln/dictionary1
 
+```
+RUN CONTAINER
+```
+docker run -it rchyln/dictiınary1
+```
 
 [![asciicast](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm.svg)](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm)
 
