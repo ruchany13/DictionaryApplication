@@ -21,6 +21,7 @@ Run:
 cd DictionaryApplication
 python3 main.py
 ```
+## Docker
 
 
 [![asciicast](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm.svg)](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm)
