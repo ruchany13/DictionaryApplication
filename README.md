@@ -20,6 +20,9 @@ Run:
 ```
 cd DictionaryApplication
 python3 main.py
+
+[![asciicast](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm.svg)](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm)
+
 ```
 ### Docker
 Pull Image
@@ -32,7 +35,7 @@ RUN CONTAINER
 docker run -it rchyln/dictiınary1
 ```
 
-[![asciicast](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm.svg)](https://asciinema.org/a/PMUgjrRC1R9qGOtOHnAYmPgKm)
+
 
 
 
