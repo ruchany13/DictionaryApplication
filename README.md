@@ -32,7 +32,7 @@ docker pull rchyln/dictionary1
 ```
 RUN CONTAINER
 ```
-docker run -it rchyln/dictiınary1
+docker run -it rchyln/dictionary1
 ```
 
 
