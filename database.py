@@ -44,6 +44,7 @@ class Dictionary(object):
     def add(self, word_data):
     # word data ("word", "data")
         code = """INSERT INTO {} VALUES (?,?,?,?,?,?,?,?) """.format(self.table_name)
+        
         self.im.execute(code, word_data)
         self.db.commit()
 
