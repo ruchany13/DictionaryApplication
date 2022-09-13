@@ -13,7 +13,7 @@ It is a Turkish-English dictionary like a word notebooks. You can add words Engl
 
  Clone the project:
 
-```
+```bash
  git clone https://github.com/ruchany13/DictionaryApplication
 ```
 Run:
